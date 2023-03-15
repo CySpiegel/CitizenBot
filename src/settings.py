@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 DISCORD_API_SECRET = os.getenv("DISCORD_API_TOKEN")
-
+STAR_CITIZEN_TOOLS_API_SECRET = os.getenv("STAR_CITIZEN_TOOLS_API_KEY")
 
 LOGGING_CONFIG = {
     "version": 1,
