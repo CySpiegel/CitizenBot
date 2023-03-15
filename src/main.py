@@ -20,12 +20,24 @@ def run():
         # except Exception as e:
         #     print(f"Error syncing commands: {e}")
 
-    @bot.command(help="This is Help",
-    description="This is description",
-    brief = "This is brief")
+    @bot.command(
+        name="ping", 
+        aliases=['p'],
+        help="This is Help",
+        description="This is description",
+        brief = "This is brief")
 
     async def ping(ctx):
+        '''Answers with pong'''
         await ctx.send("Pong")
+
+    @bot.command()
+    async def say(ctx, what = "WAT?"):
+        await ctx.send(what)
+
+    @bot.command()
+    async def say2(ctx, *what):
+        await ctx.send(" ".join(what))
 
     # @bot.tree.command(name="hello")
     # async def hello(interaction: discord.Interaction): 
