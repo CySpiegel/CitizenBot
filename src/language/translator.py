@@ -10,7 +10,7 @@ def translate(text, selectedLanguage):
 
 if __name__=="__main__":
     text = "Hello you"
-    language = 'es'
+    language = 'en'
 
     text = translate(text, language)
     print(text.text)
