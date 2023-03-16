@@ -4,8 +4,9 @@ services:
     command: 
       - bin/sh
       - -c
-      | apt update
-      | apt intall python3 -y
+      - | 
+        apt update
+        apt intall python3 -y
     init: true
     volumes:
     - type: bind
