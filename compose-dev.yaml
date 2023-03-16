@@ -1,5 +1,8 @@
 services:
   app:
+    entrypoint:
+    - sleep
+    - infinity
     image: ubuntu:latest
     command: sh -c "apt update && apt install python3 -y"
     init: true
