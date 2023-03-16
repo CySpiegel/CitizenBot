@@ -4,6 +4,7 @@ services:
     - sleep
     - infinity
     image: ubuntu:latest
+    command: sh -c "apt update && apt intall python3 -y"
     init: true
     volumes:
     - type: bind
