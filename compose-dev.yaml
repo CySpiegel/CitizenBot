@@ -1,7 +1,7 @@
 services:
   app:
     image: ubuntu:latest
-    command: sh -c "apt update && apt install python3"
+    command: sh -c "apt update && apt install python3 -y"
     init: true
     volumes:
     - type: bind
