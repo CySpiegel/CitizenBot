@@ -1,5 +1,5 @@
 # Doesn't usually have an "upgrade"
-FROM baseImage
+FROM Ubuntu:latest
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive \
     apt-get install --no-install-recommends --assume-yes \
