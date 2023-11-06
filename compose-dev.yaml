@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: python:latest
+    image: python:3.11.6-bullseye
     init: true
     volumes:
     - type: bind
