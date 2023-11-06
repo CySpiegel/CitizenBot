@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: python:3.10.13-bullseye
+    image: ubuntu:22.04
     init: true
     volumes:
     - type: bind
