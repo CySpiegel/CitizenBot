@@ -25,12 +25,6 @@ def run():
             f"Hey {interaction.user.mention}! You used a slash command.", ephemeral=True
         )
 
-    @bot.tree.command(name="say2")
-    @app_commands.describe(thing_to_say="What should i say?")
-    async def say2(interaction: discord.Interaction, thing_to_say: str):
-        await interaction.response.send_message(
-            f"{interaction.user.name} said: `{thing_to_say}`", ephemeral=True
-        )
 
     bot.run(settings.DISCORD_API_SECRET, root_logger=True)
 

@@ -1,12 +1,14 @@
+version: "3.7"
 services:
-  app:
+  discordbot:
     entrypoint:
     - sleep
     - infinity
-    image: docker/dev-environments-default:stable-1
+    image: python:3.12.0
     init: true
-    volumes:
-    - type: bind
-      source: /var/run/docker.sock
-      target: /var/run/docker.sock
 
+volumes:
+- type: bind
+  source: /var/run/docker.sock
+  target: /var/run/docker.sock
+  
