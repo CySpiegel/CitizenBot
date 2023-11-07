@@ -156,6 +156,6 @@ RUN set -eux; \
 	\
 	pip --version
  
-
+RUN pip install -r /com.docker.devenvironments.code/requierments.txt
 
 CMD ["python3"]
