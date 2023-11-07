@@ -54,7 +54,6 @@ RUN set -eux; \
 		util-linux-dev \
 		xz-dev \
 		zlib-dev \
-		git \
 	; \
 	\
 	wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; \
@@ -131,7 +130,7 @@ RUN set -eux; \
 	done
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
-ENV PYTHON_PIP_VERSION 23.3.1
+ENV PYTHON_PIP_VERSION 23.0.1
 # https://github.com/docker-library/python/issues/365
 ENV PYTHON_SETUPTOOLS_VERSION 65.5.1
 # https://github.com/pypa/get-pip
@@ -155,7 +154,5 @@ RUN set -eux; \
 	rm -f get-pip.py; \
 	\
 	pip --version
- 
-RUN pip install -r /com.docker.devenvironments.code/requierments.txt
 
 CMD ["python3"]
