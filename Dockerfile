@@ -57,7 +57,7 @@ RUN set -eux; \
 		xz-dev \
 		zlib-dev \
 		git \ 
-		python3-pip
+		python3-pip \
 	; \
 	\
 	wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; \
