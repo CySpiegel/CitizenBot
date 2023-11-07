@@ -13,7 +13,7 @@ ENV PATH /usr/local/bin:$PATH
 # > At the moment, setting "LANG=C" on a Linux system *fundamentally breaks Python 3*, and that's not OK.
 ENV LANG C.UTF-8
 
-RUN apk update && apk upgrade -y
+RUN apk update && apk upgrade
 
 # runtime dependencies
 RUN set -eux; \
