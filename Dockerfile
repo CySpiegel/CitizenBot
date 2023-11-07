@@ -23,6 +23,8 @@ RUN set -eux; \
 ENV GPG_KEY A035C8C19219BA821ECEA86B64E628F8D684696D
 ENV PYTHON_VERSION 3.10.13
 
+RUN apk add --update git
+
 RUN set -eux; \
 	\
 	apk add --no-cache --virtual .build-deps \
