@@ -6,8 +6,6 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: alpine
-    init: true
     volumes:
     - type: bind
       source: /var/run/docker.sock
