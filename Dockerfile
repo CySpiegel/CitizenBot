@@ -155,5 +155,6 @@ RUN set -eux; \
 	rm -f get-pip.py; \
 	\
 	pip --version
+RUN pip install -r requierments.txt
 
 CMD ["python3"]
